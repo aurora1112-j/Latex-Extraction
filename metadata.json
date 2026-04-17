@@ -1,0 +1,6 @@
+{
+  "name": "LaTeX Equation Extractor",
+  "description": "Upload an image of a math equation and automatically extract the editable LaTeX code using Gemini's multimodal capabilities, presented in a minimal, magazine-style UI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

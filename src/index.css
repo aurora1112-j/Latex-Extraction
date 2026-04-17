@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Georgia', 'Times New Roman', serif;
+  --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FFFFFF;
+  color: #000000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar for text area */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #000;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}
+
+/* Base styles for the Katex output */
+.katex-display {
+  margin: 0 !important;
+  padding: 1.5rem 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* Editorial Syntax Highlighting (Grayscale) */
+.token.keyword,
+.token.builtin-keyword,
+.token.function {
+  font-weight: 700;
+  color: #000000;
+}
+
+.token.punctuation {
+  color: #888888;
+}
+
+.token.operator,
+.token.entity {
+  color: #444444;
+}
+
+.token.number {
+  font-weight: 600;
+  color: #000000;
+}
+
+.token.string,
+.token.url {
+  font-style: italic;
+  color: #333333;
+}
+
+.token.comment {
+  font-style: italic;
+  color: #888888;
+}
+
+.token.variable,
+.token.property,
+.token.equation-command {
+  color: #000000;
+}
+
