@@ -81,8 +81,8 @@ export default function App() {
     try {
       const extracted = await extractLatex(file, inputText);
       setLatexCode(extracted);
-    } catch (err: any) {
-      setError(err.message || 'Failed to extract LaTeX. API key might be missing.');
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to extract LaTeX.');
     } finally {
       setIsProcessing(false);
     }
@@ -320,4 +320,3 @@ export default function App() {
     </div>
   );
 }
-
