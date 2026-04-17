@@ -4,9 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --port=3000 --host=0.0.0.0",
+    "dev": "node server.js",
     "build": "vite build",
-    "preview": "vite preview",
+    "preview": "npm run start",
+    "start": "NODE_ENV=production node server.js",
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit"
   },
